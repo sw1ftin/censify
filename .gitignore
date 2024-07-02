@@ -1,0 +1,40 @@
+# Compiled Python files
+*.pyc
+__pycache__/
+
+# Virtual environment
+venv/
+ENV/
+
+# IDE specific files
+.idea/
+.vscode/
+
+# PyCharm specific files
+*.iml
+*.ipr
+*.iws
+/.idea/workspace.xml
+/.idea/tasks.xml
+/.idea/dictionaries
+/.idea/vcs.xml
+/.idea/jsLibraryMappings.xml
+/.idea/datasetDefinitions.xml
+
+# Local development settings
+/.idea/misc.xml
+/.idea/modules.xml
+
+# Ignore any local .env files containing environmental variables
+.env
+
+# Ignore any local configuration files
+config.ini
+
+# Ignore any log files
+*.log
+
+# Ignore any cache or temporary files
+*.cache
+*.log.*
+*.tmp
