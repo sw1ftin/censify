@@ -7,6 +7,8 @@ import spotipy
 from icecream import ic
 from spotipy.oauth2 import SpotifyClientCredentials, SpotifyOAuth
 
+ic.prefix = 'CENSIFY: '
+
 config = configparser.ConfigParser()
 config.read("config.ini")
 client = {
@@ -73,6 +75,4 @@ def make_playlist(name: str, playlist_url: str, public: bool = False):
 
 
 if __name__ == '__main__':
-    make_playlist(name="Test",
-                  playlist_url="https://open.spotify.com/playlist/3EOQoQ6GZLMFTWwXfD5Clh?si=b6560977567d4ecf",
-                  public=True)
+    pass

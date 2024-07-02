@@ -8,6 +8,7 @@ from better_profanity import profanity
 with open('banned_artists.txt', 'r') as f:
     banned_artists = [i.replace('\n', '') for i in f.readlines() if not i.startswith('#')]
 
+ic.prefix = 'CENSIFY: '
 
 def get_lyrics(song: list[str, bool, int]) -> str:
     name = quote_plus(song[0])
@@ -20,7 +21,7 @@ def get_lyrics(song: list[str, bool, int]) -> str:
             request_link = loads(requests.get(link).text)
             break
         except requests.exceptions.ConnectionError:
-            ic("ERROR WITH CONNECTION, RETRYING IN 5 SECONDS")
+            ic("ERROR WITH CONNECTION, RETRYING IN 5 SECONDS\n")
             time.sleep(5)
     return request_link.get("plainLyrics")
 
