@@ -2,6 +2,9 @@
 
 Censify is a utility tool for censoring tracks from a Spotify playlist. It allows you to create a new playlist using censorship.
 
+> [!NOTE]  
+> https://github.com/censify-app/censify-app
+
 ## Getting Started
 
 To use Censify, you need to create a Spotify Developer App and set up your `config.ini` file. Additionally, make sure to add `http://localhost:8888/callback` to the list of authorized redirect URIs in your app settings.
